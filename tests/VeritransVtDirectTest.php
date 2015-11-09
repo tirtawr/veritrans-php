@@ -47,7 +47,7 @@ class VeritransVtDirectTest extends PHPUnit_Framework_TestCase
         $errorHappen = true;
         $this->assertEquals(
           $error->getMessage(),
-          "Veritrans Error (401): Access denied due to unauthorized transaction, please check client or server key");
+          "Veritrans Error (411): Token id is missing, invalid, or timed out");
       }
 
       $this->assertTrue($errorHappen);
